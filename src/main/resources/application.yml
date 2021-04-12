@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://132.226.168.163:3306/bootex
+    username: bootuser
+    password: bootuser
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform:  org.hibernate.dialect.MariaDB103Dialect
+    properties:
+      hibernate:
+        format_sql: true
+  thymeleaf:
+    cache: false
+
+logging.level:
+  org.hibernate.SQL: debug
+#  org.hibernate.type: trace 
+
+decorator.datasource.p6spy:
+  multiline: true

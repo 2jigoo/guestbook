@@ -1,0 +1,1 @@
+select * from guestbook where gno = 300;
